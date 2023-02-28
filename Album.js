@@ -10,4 +10,25 @@ class Album
 		this.songAmount = songAmount;
 		this.songs = songs;
 	}
+
+	//getter Methods
+	get_Name(){
+		return this.name;
+	}
+
+	get_Artist(){
+		return this.artist;
+	}
+
+	get_coverArt(){
+		// return jpeg
+	}
+
+	get_songsAmount(){
+		return this.songAmount;
+	}
+
+	get_songName(index){
+		// retrieve Artist & Album name, get that album and traverse songs until we get to index
+	}
 };
