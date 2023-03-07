@@ -2,7 +2,15 @@
 
 class Album
 {
-	constructor(name, artist, albumConvert, songAmount, songs)
+	private:
+		var name;
+		var artist;
+		var albumCoverArt;
+		var songAmount;
+		var songs;
+
+	public:
+	constructor(name, artist, albumConverArt, songAmount, songs)
 	{
 		this.name = name;
 		this.artist = artist;
@@ -10,7 +18,7 @@ class Album
 		this.songAmount = songAmount;
 		this.songs = songs;
 	}
-
+	
 	//getter Methods
 	get_Name(){
 		return this.name;
