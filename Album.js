@@ -1,14 +1,13 @@
 //Album Class
-<script>
 
 class Album
 {
 	private:
-		var name;
-		var artist;
+		var name = "none";
+		var artist = "none";
 		var albumCoverArt;
-		var songAmount;
-		var songs;
+		var songAmount = 0;
+		var songs[];
 
 	public:
 	constructor(name, artist, albumConverArt, songAmount, songs)
@@ -56,4 +55,3 @@ class Album
 		this._Songs = songs;
 	}
 };
-</script>
