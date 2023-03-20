@@ -1,4 +1,5 @@
 //Album Class
+<script>
 
 class Album
 {
@@ -28,7 +29,7 @@ class Album
 		return this.artist;
 	}
 
-	get_coverArt(){
+	get_albumCoverArt(){
 		// return jpeg
 	}
 
@@ -39,4 +40,20 @@ class Album
 	get_songName(index){
 		// retrieve Artist & Album name, get that album and traverse songs until we get to index
 	}
+	set_Name(name){
+		this._Name = name;
+	}
+	set_Artist(artist){
+		this._Artist = artist;
+	}
+	set_albumCoverArt(albumCoverArt){
+		this._albumCoverArt = albumCoverArt;
+	}
+	set_songAmount(songAmount){
+		this._songAmount = songAmount;
+	}
+	set_songs(songs){
+		this._Songs = songs;
+	}
 };
+</script>
