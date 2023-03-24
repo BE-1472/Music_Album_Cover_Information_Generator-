@@ -7,7 +7,7 @@ class History
 {
   constructor() 
 	{
-    		this.items = [];
+    		this.items = {];
   	}
 
   // add string to the back of the queue
@@ -20,7 +20,7 @@ class History
   dequeue() 
 	{
     		if (this.isEmpty()) {
-      		return "Queue is empty";
+      		return "Queue is empty"
     	}
     	return this.items.shift();
   	}
