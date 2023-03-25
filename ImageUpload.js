@@ -44,7 +44,7 @@ class Upload extends Component {
             <div>
                 <h3>Image Upload</h3>
                 <div>
-                    <input type ="image" onChange={this.onFileChange} alt="choose file" />
+                    <input type ="file" accept="image/*" onChange={this.onFileChange} alt="choose file" />
                     <button onClick={this.onFileUpload}>
                         Upload
                     </button>
