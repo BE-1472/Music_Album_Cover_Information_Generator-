@@ -3,11 +3,13 @@ import React,{Component} from 'react';
 
 class Upload extends Component {
     state = {
-        coverArt: null
+        coverArt: null,
+        imageArt: null
     };
 
     onfileChange = event => {
         this.setState({ coverArt: event.target.files[0]});
+        this.setState({imageArt: URL.createObjectURL(event.target.files[0])});
     };
 
     onFileUpload = () => {
@@ -25,6 +27,9 @@ class Upload extends Component {
             return(
                 <div>
                     <p>File Name:{this.state.coverArt.name}</p>
+                    <div>
+                    <img alt="not found" width={"250px"} src={this.state.imageArt} />
+                    </div>
                 </div>
             );
         }
