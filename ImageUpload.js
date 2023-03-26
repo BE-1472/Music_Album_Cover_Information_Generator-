@@ -13,7 +13,7 @@ function ImageUpload(){
                 <h3>Image Upload</h3>
                 <div>
                     <input type ="file" accept="image/*" onChange={handleChange} alt="choose file" />
-                    <img src={coverArt} width="400" height="400" alt="Images Preview"/>
+                    <img src={coverArt} alt=""/>
                     <button >
                         Upload
                     </button>
