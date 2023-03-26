@@ -3,17 +3,17 @@
 import React,{ useState} from 'react';
 
 function ImageUpload(){
-    const [coverArt, setcoverArt] = useState();
+    const [albumArt, setalbumArt] = useState();
     function handleChange(e) {
         console.log(e.target.files);
-     setcoverArt(URL.createObjectURL(e.target.files[0]));
+     setalbumArt(URL.createObjectURL(e.target.files[0]));
     }
      return (
             <div>
                 <h3>Image Upload</h3>
                 <div>
                     <input type ="file" accept="image/*" onChange={handleChange} alt="choose file" />
-                    <img src={coverArt} alt=""/>
+                    <img src={albumArt} alt=""/>
                     <button >
                         Upload
                     </button>
@@ -88,4 +88,4 @@ class Upload extends Component {
     }
 }
 
-export default Upload;
+export default Upload; */
