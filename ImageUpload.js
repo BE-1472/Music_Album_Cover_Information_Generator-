@@ -1,4 +1,30 @@
-import axios from 'axios';
+
+//import axios from 'axios'; for when uploading to database
+import React,{ useState} from 'react';
+
+function ImageUpload(){
+    const [coverArt, setcoverArt] = useState();
+    function handleChange(e) {
+        console.log(e.target.files);
+     setcoverArt(URL.createObjectURL(e.target.files[0]));
+    }
+     return (
+            <div>
+                <h3>Image Upload</h3>
+                <div>
+                    <input type ="file" accept="image/*" onChange={handleChange} alt="choose file" />
+                    <img src={coverArt} width="400" height="400" alt="Images Preview"/>
+                    <button >
+                        Upload
+                    </button>
+                </div>
+            </div>
+
+        )
+
+    }
+export default ImageUpload;
+/*import axios from 'axios';
 import React,{Component} from 'react';
 
 class Upload extends Component {
