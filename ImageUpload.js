@@ -4,7 +4,7 @@ import React,{ useState} from 'react';
 
 function ImageUpload(){
     const [albumArt, setalbumArt] = useState();
-    function handleChange(e) {
+    function chooseAlbumCover(e) {
         console.log(e.target.files);
      setalbumArt(URL.createObjectURL(e.target.files[0]));
     }
@@ -12,7 +12,7 @@ function ImageUpload(){
             <div>
                 <h3>Image Upload</h3>
                 <div>
-                    <input type ="file" accept="image/*" onChange={handleChange} alt="choose file" />
+                    <input type ="file" accept="image/*" onChange={chooseAlbumCover} alt="choose file" />
                     <img src={albumArt} alt=""/>
                     <button >
                         Upload
